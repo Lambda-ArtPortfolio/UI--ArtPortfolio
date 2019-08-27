@@ -241,6 +241,11 @@ h1 {
   position: absolute;
   height: 47px;
 }
+@media screen and (max-width: 500px) {
+  .footer-container2 .pFooter {
+    font-size: 0.8rem;
+  }
+}
 .footer-container3 {
   margin-top: 3rem;
   border-radius: 20px;
@@ -253,6 +258,11 @@ h1 {
   align-items: center;
   position: absolute;
   height: 47px;
+}
+@media screen and (max-width: 500px) {
+  .footer-container3 .pFooter {
+    font-size: 0.8rem;
+  }
 }
 .header-content {
   margin-right: 10%;
@@ -303,26 +313,43 @@ p {
   font-size: 1.7rem;
   padding-bottom: 2rem;
 }
-.list-container {
+@media screen and (max-width: 500px) {
+  p {
+    text-align: center;
+  }
+}
+.list-container ul {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 500px) {
+  .list-container ul {
+    flex-direction: column;
+  }
+}
 ul {
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: center;
   column-count: 4;
   list-style-type: none;
+  width: 100%;
 }
 ul li {
-  width: 100%;
-  text-decoration: none;
+  max-width: 100%;
+  text-align: center;
 }
 ul a {
   padding: 3rem;
   font-size: 2rem;
-  text-decoration: none;
 }
 ul img {
-  width: 80px;
+  width: 220px;
   border-radius: 50%;
+}
+.list-item a {
+  text-decoration: none;
+  color: black;
+  display: block;
 }

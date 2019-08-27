@@ -1,6 +1,4 @@
-.main-content-container{
 
-}
 
 
 .header-content{
@@ -51,37 +49,50 @@ p{
     padding-top: 2rem;
     font-size: 1.7rem;
     padding-bottom: 2rem;
+    @media screen and (max-width: 500px){
+        text-align: center;
+    }
 }
 
 
-.list-container{
+.list-container ul{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-evenly;
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+    }
 }
 
 ul {
-    padding-top: 2rem;
+    padding-top: 3rem;
     text-align: center;
     column-count: 4;
     list-style-type: none;
+    width: 100%;
 
     li {
-
-        // text-align: center;
-        // display: inline-block;
-        width: 100%;
-        text-decoration: none;
+        max-width: 100%;
+        text-align: center;
     }
     
     
     a {
         padding: 3rem;
         font-size: 2rem;
-        text-decoration: none;
     }
     img {
-        width: 80px;
+        width: 220px;
         border-radius: 50%;
       }
+  }
+
+  .list-item a{
+      text-decoration: none;
+      color: black;
+      display: block;
+    //   flex-wrap: wrap;
+      
   }
 
