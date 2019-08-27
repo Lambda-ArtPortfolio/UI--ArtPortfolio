@@ -147,7 +147,8 @@ table {
   }
 }
 .nav-container .menu a {
-  color: grey;
+  font-family: 'Roboto', sans-serif;
+  color: #854B85;
   font-size: 1.5rem;
   clear: right;
   text-decoration: none;
@@ -159,8 +160,8 @@ table {
   }
 }
 .nav-container .menu a:hover {
-  color: black;
-  text-shadow: 1px 1px grey;
+  color: #AC76B2;
+  text-shadow: 1px 1px #854B85;
 }
 .banner {
   border-radius: 25px;
@@ -214,9 +215,9 @@ table {
   }
 }
 h1 {
-  font-size: 3rem;
-  color: snow;
-  text-shadow: 3px 3px grey;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8rem;
+  color: #F9F5F9;
   text-align: center;
   line-height: 16.5rem;
 }
@@ -224,6 +225,27 @@ h1 {
   h1 {
     line-height: 24rem;
   }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.bottom-button {
+  border-radius: 10px;
+  background: #84977D;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+}
+.bottom-button a {
+  line-height: 3rem;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  color: snow;
+}
+.bottom-button:hover {
+  background: #854B85;
 }
 .footer-container {
   margin-top: 3rem;
@@ -316,17 +338,23 @@ h2 {
   padding-top: 2rem;
   font-size: 60px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #854B85;
 }
 h3 {
   text-align: center;
   padding-top: 2rem;
   font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #854B85;
 }
 p {
   text-align: center;
   padding-top: 2rem;
   font-size: 1.7rem;
   padding-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
+  color: #854B85;
 }
 @media screen and (max-width: 500px) {
   p {
@@ -354,6 +382,7 @@ ul li {
   text-align: center;
 }
 ul a {
+  font-family: 'Roboto', sans-serif;
   padding: 3rem;
   font-size: 2rem;
 }
