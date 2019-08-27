@@ -1,3 +1,8 @@
+.main-content-container{
+
+}
+
+
 .header-content{
     margin-right: 10%;
     margin-left: 10%;
@@ -6,10 +11,30 @@
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
+    @media screen and (max-width: 500px){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+        margin: none;
+        padding: 0;
+    }
 }
-// .middle-items{
+.middle-items{
+    text-align: center;
+}
+.middle-images{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 25px;
+    @media screen and (max-width: 500px){
+        width: 25rem;
+        height: 25rem;
     
-// }
+    }   
+
+}
+
 
 h2{
     padding-top: 2rem;
@@ -28,15 +53,6 @@ p{
     padding-bottom: 2rem;
 }
 
-.middle-items{
-    text-align: center;
-}
-.middle-images{
-    height: 40rem;
-    width: 40rem;
-    border-radius: 25px;
-
-}
 
 .list-container{
     display: flex;

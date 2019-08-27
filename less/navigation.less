@@ -2,17 +2,27 @@
 .nav-container{
     padding-top: 20px;
     padding-bottom: 20px;
+    @media screen and (max-width: 500px){
+        display: flex;
+    }
 .menu {
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
     align-items: center;
+    @media screen and (max-width: 500px){
+        width: 100%;
+        flex-direction: column;
+    }
     a{
         color: grey;
         font-size: 1.5rem;
         clear: right;
         text-decoration: none;
         margin: 0 20px;
+        @media screen and (max-width: 500px){
+            align-content: center;
+        }
         &:hover{
             color: black;
             text-shadow: 1px 1px grey;

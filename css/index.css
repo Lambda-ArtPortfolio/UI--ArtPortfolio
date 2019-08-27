@@ -130,11 +130,22 @@ table {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 500px) {
+  .nav-container {
+    display: flex;
+  }
+}
 .nav-container .menu {
   display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .nav-container .menu {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .nav-container .menu a {
   color: grey;
@@ -142,6 +153,11 @@ table {
   clear: right;
   text-decoration: none;
   margin: 0 20px;
+}
+@media screen and (max-width: 500px) {
+  .nav-container .menu a {
+    align-content: center;
+  }
 }
 .nav-container .menu a:hover {
   color: black;
@@ -155,6 +171,14 @@ table {
   background-position: center center;
   background-position-y: 154rem;
   background-position-x: -518rem;
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 25rem;
+    width: 31rem;
+    background-position-y: 158rem;
+    background-position-x: -555.5rem;
+  }
 }
 .banner2 {
   border-radius: 25px;
@@ -181,6 +205,11 @@ h1 {
   text-align: center;
   line-height: 16.5rem;
 }
+@media screen and (max-width: 500px) {
+  h1 {
+    line-height: 24rem;
+  }
+}
 .footer-container {
   margin-top: 3rem;
   border-radius: 20px;
@@ -193,6 +222,11 @@ h1 {
   align-items: center;
   position: absolute;
   height: 47px;
+}
+@media screen and (max-width: 500px) {
+  .footer-container .pFooter {
+    font-size: 0.8rem;
+  }
 }
 .footer-container2 {
   margin-top: 3rem;
@@ -229,6 +263,30 @@ h1 {
   margin-right: 10%;
   display: flex;
 }
+@media screen and (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    margin: none;
+    padding: 0;
+  }
+}
+.middle-items {
+  text-align: center;
+}
+.middle-images {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 25px;
+}
+@media screen and (max-width: 500px) {
+  .middle-images {
+    width: 25rem;
+    height: 25rem;
+  }
+}
 h2 {
   padding-top: 2rem;
   font-size: 60px;
@@ -244,14 +302,6 @@ p {
   padding-top: 2rem;
   font-size: 1.7rem;
   padding-bottom: 2rem;
-}
-.middle-items {
-  text-align: center;
-}
-.middle-images {
-  height: 40rem;
-  width: 40rem;
-  border-radius: 25px;
 }
 .list-container {
   display: flex;
