@@ -154,11 +154,6 @@ table {
   text-decoration: none;
   margin: 0 20px;
 }
-@media screen and (max-width: 500px) {
-  .nav-container .menu a {
-    align-content: center;
-  }
-}
 .nav-container .menu a:hover {
   color: #AC76B2;
   text-shadow: 1px 1px #854B85;
@@ -232,7 +227,7 @@ h1 {
 }
 .bottom-button {
   border-radius: 10px;
-  background: #84977D;
+  background: #854B85;
   width: 10rem;
   height: 3rem;
   text-align: center;
@@ -245,7 +240,7 @@ h1 {
   color: snow;
 }
 .bottom-button:hover {
-  background: #854B85;
+  background: #84977D;
 }
 .footer-container {
   margin-top: 3rem;
@@ -300,6 +295,15 @@ h1 {
   .footer-container3 .pFooter {
     font-size: 0.8rem;
   }
+}
+.footer-container .pFooter {
+  color: snow;
+}
+.footer-container2 .pFooter {
+  color: snow;
+}
+.footer-container3 .pFooter {
+  color: snow;
 }
 .header-content {
   margin-right: 10%;
@@ -394,4 +398,31 @@ ul img {
   text-decoration: none;
   color: black;
   display: block;
+}
+.contact-container {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-container img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+  }
+}
+.contact-container #fname {
+  font-size: 40px;
+}
+.contact-container #subject {
+  height: 50px;
+  width: 500px;
 }
