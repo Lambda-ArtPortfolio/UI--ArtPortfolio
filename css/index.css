@@ -138,7 +138,6 @@ table {
 .nav-container .menu {
   display: flex;
   justify-content: space-around;
-  flex-flow: row nowrap;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
@@ -189,6 +188,14 @@ table {
   background-position-y: 124rem;
   background-position-x: -135.5rem;
 }
+@media screen and (max-width: 500px) {
+  .banner2 {
+    height: 25rem;
+    width: 31rem;
+    background-position-y: 128rem;
+    background-position-x: -547.5rem;
+  }
+}
 .banner3 {
   border-radius: 25px;
   width: 100%;
@@ -197,6 +204,14 @@ table {
   background-position: center center;
   background-position-y: 125.5rem;
   background-position-x: -73.3rem;
+}
+@media screen and (max-width: 500px) {
+  .banner3 {
+    height: 25rem;
+    width: 31rem;
+    background-position-y: 129rem;
+    background-position-x: -110.5rem;
+  }
 }
 h1 {
   font-size: 3rem;
@@ -311,7 +326,7 @@ p {
   text-align: center;
   padding-top: 2rem;
   font-size: 1.7rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 500px) {
   p {
@@ -325,9 +340,7 @@ p {
   justify-content: space-evenly;
 }
 @media screen and (max-width: 500px) {
-  .list-container ul {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 ul {
   padding-top: 3rem;
