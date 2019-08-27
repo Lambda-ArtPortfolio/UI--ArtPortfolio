@@ -154,7 +154,7 @@ table {
   height: 275px;
   background-position: center center;
   background-position-y: 154rem;
-  background-position-x: -511rem;
+  background-position-x: -518rem;
 }
 .banner2 {
   border-radius: 25px;
@@ -163,7 +163,7 @@ table {
   height: 275px;
   background-position: center center;
   background-position-y: 124rem;
-  background-position-x: -128rem;
+  background-position-x: -135.5rem;
 }
 .banner3 {
   border-radius: 25px;
@@ -172,7 +172,7 @@ table {
   height: 275px;
   background-position: center center;
   background-position-y: 125.5rem;
-  background-position-x: -66rem;
+  background-position-x: -73.3rem;
 }
 h1 {
   font-size: 3rem;
@@ -252,4 +252,27 @@ p {
   height: 40rem;
   width: 40rem;
   border-radius: 25px;
+}
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  padding-top: 2rem;
+  text-align: center;
+  column-count: 4;
+  list-style-type: none;
+}
+ul li {
+  width: 100%;
+  text-decoration: none;
+}
+ul a {
+  padding: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+ul img {
+  width: 80px;
+  border-radius: 50%;
 }
