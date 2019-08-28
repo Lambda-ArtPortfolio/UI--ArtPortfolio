@@ -158,17 +158,17 @@ table {
   color: #AC76B2;
   text-shadow: 1px 1px #854B85;
 }
-.banner {
+.banner img {
+  object-fit: cover;
   border-radius: 25px;
-  width: 100%;
-  background-image: url("/img/img5.jpg");
-  height: 275px;
+  height: 200px;
+  width: 1200px;
   background-position: center center;
   background-position-y: 154rem;
   background-position-x: -518rem;
 }
 @media screen and (max-width: 800px) {
-  .banner {
+  .banner img {
     height: 25rem;
     width: 100%;
     background-position-y: 158rem;
@@ -176,7 +176,7 @@ table {
   }
 }
 @media screen and (max-width: 500px) {
-  .banner {
+  .banner img {
     height: 25rem;
     width: 31rem;
     background-position-y: 158rem;
@@ -184,7 +184,7 @@ table {
   }
 }
 @media screen and (max-width: 414px) {
-  .banner {
+  .banner img {
     width: 100%;
     background-position-y: 158rem;
     background-position-x: -558rem;
