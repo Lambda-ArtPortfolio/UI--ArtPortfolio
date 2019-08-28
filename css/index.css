@@ -192,6 +192,14 @@ table {
   background-position-y: 124rem;
   background-position-x: -135.5rem;
 }
+@media screen and (max-width: 800px) {
+  .banner2 {
+    height: 25rem;
+    width: 100%;
+    background-position-y: 127.5rem;
+    background-position-x: -538rem;
+  }
+}
 @media screen and (max-width: 500px) {
   .banner2 {
     height: 25rem;
@@ -208,6 +216,14 @@ table {
   background-position: center center;
   background-position-y: 125.5rem;
   background-position-x: -73.3rem;
+}
+@media screen and (max-width: 800px) {
+  .banner3 {
+    height: 25rem;
+    width: 100%;
+    background-position-y: 129.2rem;
+    background-position-x: -389rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .banner3 {
@@ -422,14 +438,15 @@ p {
 }
 ul {
   padding-top: 3rem;
-  text-align: center;
-  column-count: 4;
   list-style-type: none;
-  width: 100%;
 }
 ul li {
-  max-width: 100%;
   text-align: center;
+}
+@media screen and (max-width: 800px) {
+  ul li {
+    width: 100%;
+  }
 }
 ul a {
   font-family: 'Roboto', sans-serif;
@@ -457,9 +474,20 @@ ul img {
   justify-content: space-evenly;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
 @media screen and (max-width: 500px) {
   .contact-container {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-container img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {

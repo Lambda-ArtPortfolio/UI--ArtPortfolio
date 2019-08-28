@@ -95,21 +95,23 @@ p{
     width: 100%;
     justify-content: space-evenly;
     }
+
     @media screen and (max-width: 500px){
         flex-direction: column;
     }
 
-
 ul {
     padding-top: 3rem;
-    text-align: center;
-    column-count: 4;
     list-style-type: none;
-    width: 100%;
+ 
+
 
     li {
-        max-width: 100%;
+        
         text-align: center;
+        @media screen and (max-width: 800px){
+            width: 100%;
+        }
         
     }
     
@@ -122,6 +124,7 @@ ul {
     img {
         width: 220px;
         border-radius: 50%;
+    
       }
   }
 
@@ -149,12 +152,18 @@ ul {
     justify-content: center;
     justify-content: space-evenly;
     text-align: center;
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        align-content: space-between;
+    }
     @media screen and (max-width: 500px){
         flex-direction: column;
     }
     
     img{
-
+        @media screen and (max-width: 800px){
+            width: 100%;
+        }
         @media screen and (max-width: 500px){
             position: relative;
             height: 600px;
@@ -181,9 +190,7 @@ font-size: 40px;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-    @media screen and (max-width: 500px){
-        
-    }
+
 
     .group img{
         object-fit: cover;
