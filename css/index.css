@@ -167,6 +167,14 @@ table {
   background-position-y: 154rem;
   background-position-x: -518rem;
 }
+@media screen and (max-width: 800px) {
+  .banner {
+    height: 25rem;
+    width: 100%;
+    background-position-y: 158rem;
+    background-position-x: -545.5rem;
+  }
+}
 @media screen and (max-width: 500px) {
   .banner {
     height: 25rem;
@@ -216,6 +224,11 @@ h1 {
   text-align: center;
   line-height: 16.5rem;
 }
+@media screen and (max-width: 800px) {
+  h1 {
+    line-height: 24rem;
+  }
+}
 @media screen and (max-width: 500px) {
   h1 {
     line-height: 24rem;
@@ -259,6 +272,11 @@ h1 {
 @media screen and (max-width: 500px) {
   .footer-container .pFooter {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pFooter {
+    font-size: 1.3rem;
   }
 }
 .footer-container2 {
@@ -315,6 +333,14 @@ h1 {
   margin-right: 10%;
   display: flex;
 }
+@media screen and (max-width: 800px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: none;
+  }
+}
 @media screen and (max-width: 500px) {
   .middle-content {
     display: flex;
@@ -327,6 +353,19 @@ h1 {
 }
 .middle-items {
   text-align: center;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+  padding-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 800px) {
+  .middle-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
 }
 .middle-images {
   object-fit: cover;
@@ -361,6 +400,11 @@ p {
   padding-bottom: 3rem;
   font-family: 'Roboto', sans-serif;
   color: #854B85;
+}
+@media screen and (max-width: 800px) {
+  p {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 500px) {
   p {
@@ -398,8 +442,11 @@ ul img {
 }
 .list-item a {
   text-decoration: none;
-  color: black;
+  color: #854B85;
   display: block;
+}
+.list-item a:hover {
+  color: black;
 }
 .contact-container {
   max-width: 100%;
@@ -407,6 +454,7 @@ ul img {
   width: 100%;
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 @media screen and (max-width: 500px) {

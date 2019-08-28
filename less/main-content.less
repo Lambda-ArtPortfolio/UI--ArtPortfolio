@@ -9,6 +9,13 @@
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
+    @media screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: none;
+        
+    }
     
     @media screen and (max-width: 500px){
         display: flex;
@@ -21,6 +28,19 @@
 }
 .middle-items{
     text-align: center;
+        text-align: center;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+    font-family: 'Roboto', sans-serif;
+    @media screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    
+    }   
 }
 .middle-images{
     object-fit: cover;
@@ -58,6 +78,10 @@ p{
     padding-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     color: #854B85;
+    @media screen and (max-width: 800px){
+        text-align: center;
+ 
+    }
     @media screen and (max-width: 500px){
         text-align: center;
     }
@@ -103,11 +127,15 @@ ul {
 
   .list-item a{
       text-decoration: none;
-      color: black;
+      color: #854B85;
       display: block;
-    //   flex-wrap: wrap;
+    &:hover{
+        color: black;
+ 
+    }
       
   }
+  //END TEAM LIST
 
 
 
@@ -119,6 +147,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     @media screen and (max-width: 500px){
         flex-direction: column;
@@ -146,7 +175,7 @@ font-size: 40px;
 
 
 
-//PICTURE GROUP
+//PICTURE GROUP INDEX PAGE
 .picture-group{
     display: flex;
     flex-wrap: wrap;
